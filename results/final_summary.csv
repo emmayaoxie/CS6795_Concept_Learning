@@ -1,0 +1,13 @@
+sequence,model,final_accuracy,final_precision,final_recall,final_f1,mean_accuracy_over_steps,final_misclassified_examples
+canonical_first,top_down,0.625,0.5,1.0,0.667,0.625,"lentil_stew, fruit_soup, gravy"
+canonical_first,bottom_up,0.625,0.5,1.0,0.667,0.625,"lentil_stew, oatmeal, gravy"
+canonical_first,case_based,0.75,0.6,1.0,0.75,0.547,"lentil_stew, oatmeal"
+canonical_first,hybrid,0.875,0.75,1.0,0.857,0.609,lentil_stew
+boundary_first,top_down,0.625,0.5,1.0,0.667,0.625,"lentil_stew, fruit_soup, gravy"
+boundary_first,bottom_up,0.625,0.5,1.0,0.667,0.562,"lentil_stew, oatmeal, gravy"
+boundary_first,case_based,0.75,0.6,1.0,0.75,0.609,"lentil_stew, oatmeal"
+boundary_first,hybrid,0.875,0.75,1.0,0.857,0.75,lentil_stew
+negatives_first,top_down,0.625,0.5,1.0,0.667,0.625,"lentil_stew, fruit_soup, gravy"
+negatives_first,bottom_up,0.625,0.5,1.0,0.667,0.703,"lentil_stew, oatmeal, gravy"
+negatives_first,case_based,0.75,0.6,1.0,0.75,0.688,"lentil_stew, oatmeal"
+negatives_first,hybrid,0.875,0.75,1.0,0.857,0.75,lentil_stew

@@ -1,0 +1,287 @@
+{
+  "canonical_first": {
+    "hybrid_config": {
+      "early_rule_weight": 0.5,
+      "early_feature_weight": 0.2,
+      "late_rule_weight": 0.35,
+      "late_feature_weight": 0.4,
+      "stage_switch_examples": 3,
+      "threshold": 0.58,
+      "negative_exception_penalty": 0.1,
+      "positive_exception_bonus": 0.05,
+      "similarity_margin": 0.15
+    },
+    "model_rank_by_final_accuracy": [
+      {
+        "model": "hybrid",
+        "final_accuracy": 0.875,
+        "mean_accuracy": 0.609,
+        "final_errors": [
+          "lentil_stew"
+        ]
+      },
+      {
+        "model": "case_based",
+        "final_accuracy": 0.75,
+        "mean_accuracy": 0.547,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal"
+        ]
+      },
+      {
+        "model": "bottom_up",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.625,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal",
+          "gravy"
+        ]
+      },
+      {
+        "model": "top_down",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.625,
+        "final_errors": [
+          "lentil_stew",
+          "fruit_soup",
+          "gravy"
+        ]
+      }
+    ],
+    "hybrid_only_error": [
+      "lentil_stew"
+    ],
+    "dominant_positive_features": [
+      [
+        "savory",
+        0.75
+      ],
+      [
+        "meal_like",
+        0.75
+      ],
+      [
+        "spoonable",
+        0.5
+      ]
+    ],
+    "dominant_negative_features": [
+      [
+        "sweet",
+        -0.75
+      ],
+      [
+        "drink_like",
+        -0.75
+      ],
+      [
+        "cold_ok",
+        -0.25
+      ]
+    ],
+    "final_common_positive_features": [
+      "savory",
+      "spoonable",
+      "meal_like",
+      "contains_solids",
+      "served_hot",
+      "broth_based"
+    ],
+    "final_forbidden_features": [
+      "sweet",
+      "drink_like"
+    ]
+  },
+  "boundary_first": {
+    "hybrid_config": {
+      "early_rule_weight": 0.5,
+      "early_feature_weight": 0.2,
+      "late_rule_weight": 0.35,
+      "late_feature_weight": 0.4,
+      "stage_switch_examples": 3,
+      "threshold": 0.58,
+      "negative_exception_penalty": 0.1,
+      "positive_exception_bonus": 0.05,
+      "similarity_margin": 0.15
+    },
+    "model_rank_by_final_accuracy": [
+      {
+        "model": "hybrid",
+        "final_accuracy": 0.875,
+        "mean_accuracy": 0.75,
+        "final_errors": [
+          "lentil_stew"
+        ]
+      },
+      {
+        "model": "case_based",
+        "final_accuracy": 0.75,
+        "mean_accuracy": 0.609,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal"
+        ]
+      },
+      {
+        "model": "top_down",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.625,
+        "final_errors": [
+          "lentil_stew",
+          "fruit_soup",
+          "gravy"
+        ]
+      },
+      {
+        "model": "bottom_up",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.562,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal",
+          "gravy"
+        ]
+      }
+    ],
+    "hybrid_only_error": [
+      "lentil_stew"
+    ],
+    "dominant_positive_features": [
+      [
+        "savory",
+        0.75
+      ],
+      [
+        "meal_like",
+        0.75
+      ],
+      [
+        "spoonable",
+        0.5
+      ]
+    ],
+    "dominant_negative_features": [
+      [
+        "sweet",
+        -0.75
+      ],
+      [
+        "drink_like",
+        -0.75
+      ],
+      [
+        "cold_ok",
+        -0.25
+      ]
+    ],
+    "final_common_positive_features": [
+      "savory",
+      "spoonable",
+      "meal_like",
+      "contains_solids",
+      "served_hot",
+      "broth_based"
+    ],
+    "final_forbidden_features": [
+      "sweet",
+      "drink_like"
+    ]
+  },
+  "negatives_first": {
+    "hybrid_config": {
+      "early_rule_weight": 0.5,
+      "early_feature_weight": 0.2,
+      "late_rule_weight": 0.35,
+      "late_feature_weight": 0.4,
+      "stage_switch_examples": 3,
+      "threshold": 0.58,
+      "negative_exception_penalty": 0.1,
+      "positive_exception_bonus": 0.05,
+      "similarity_margin": 0.15
+    },
+    "model_rank_by_final_accuracy": [
+      {
+        "model": "hybrid",
+        "final_accuracy": 0.875,
+        "mean_accuracy": 0.75,
+        "final_errors": [
+          "lentil_stew"
+        ]
+      },
+      {
+        "model": "case_based",
+        "final_accuracy": 0.75,
+        "mean_accuracy": 0.688,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal"
+        ]
+      },
+      {
+        "model": "bottom_up",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.703,
+        "final_errors": [
+          "lentil_stew",
+          "oatmeal",
+          "gravy"
+        ]
+      },
+      {
+        "model": "top_down",
+        "final_accuracy": 0.625,
+        "mean_accuracy": 0.625,
+        "final_errors": [
+          "lentil_stew",
+          "fruit_soup",
+          "gravy"
+        ]
+      }
+    ],
+    "hybrid_only_error": [
+      "lentil_stew"
+    ],
+    "dominant_positive_features": [
+      [
+        "savory",
+        0.75
+      ],
+      [
+        "meal_like",
+        0.75
+      ],
+      [
+        "spoonable",
+        0.5
+      ]
+    ],
+    "dominant_negative_features": [
+      [
+        "sweet",
+        -0.75
+      ],
+      [
+        "drink_like",
+        -0.75
+      ],
+      [
+        "cold_ok",
+        -0.25
+      ]
+    ],
+    "final_common_positive_features": [
+      "savory",
+      "spoonable",
+      "meal_like",
+      "contains_solids",
+      "served_hot",
+      "broth_based"
+    ],
+    "final_forbidden_features": [
+      "sweet",
+      "drink_like"
+    ]
+  }
+}
